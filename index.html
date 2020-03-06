@@ -10,43 +10,88 @@
     <!-- stylesheet -->
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Nunito&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/33e5c51ab9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <header id="header">
             <section id="side-navbar">
-                <div class="nav-item">ALL NEWS</div>
-                <div class="nav-item">Business</div>
-                <div class="nav-item">Politics</div>
-                <div class="nav-item">Sports</div>
-                <div class="nav-item">World</div>
+                <div class="nav-item"> <i class="fas fa-newspaper"></i> ALL NEWS</div>
+                <div class="nav-item"> <i class="fas fa-suitcase"></i> Business </div>
+                <div class="nav-item"> <i class="fas fa-landmark"></i> Politics </div>
+                <div class="nav-item"> <i class="fas fa-volleyball-ball"></i> Sports </div>
+                <div class="nav-item"> <i class="fas fa-globe-asia"></i> World </div>
             </section>
-            <section id="title">
-                NEWS
-            </section>
+            <h1 id="title">
+                NEWS in SHORT
+            </h1>
         </header>
 
         <container id="container">
             <div id="news-container">
                 <section class="news-post">
-                    <h3 class="news-title">News Title</h3>
-                    <h5 class="author-name">Author</h5>
+                    <h1 class="news-title">Springboard launches mentor-led UI/UX Design course in Mars</h1>
+                    <div class="author-date-container">
+                        By <span class="author-name">John Doe</span>
+                        on <span class="news-post-date">06 Mar 2020,Friday</span>
+                    </div>
                     <div class="news-description">
                         <img src="./assets/news-thumbnail.jpg" alt="image for news" class="news-thumbnail" />
-                        <p>
+                        <p class="news-in-detail">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta ea odit!
+                            Accusantium quae accusamus dolore ex quaerat dignissimos numquam? Aut ducimus ab
+                            exercitationem excepturi modi magni laudantium sapiente nostrum.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta ea odit!
                             Accusantium quae accusamus dolore ex quaerat dignissimos numquam? Aut ducimus ab
                             exercitationem excepturi modi magni laudantium sapiente nostrum.
                         </p>
                     </div>
+                    <a href="#" target="_blank" class="read-more-link"><i class="fas fa-link"></i> Read More ...</a>
+                </section>
+
+                <section class="news-post">
+                    <h1 class="news-title">Springboard launches mentor-led UI/UX Design course in Mars</h1>
+                    <div class="author-date-container">
+                        By <span class="author-name">John Doe</span>
+                        on <span class="news-post-date">06 Mar 2020,Friday</span>
+                    </div>
+                    <div class="news-description">
+                        <img src="./assets/news-thumbnail.jpg" alt="image for news" class="news-thumbnail" />
+                        <p class="news-in-detail">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta ea odit!
+                            Accusantium quae accusamus dolore ex quaerat dignissimos numquam? Aut ducimus ab
+                            exercitationem excepturi modi magni laudantium sapiente nostrum.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta ea odit!
+                            Accusantium quae accusamus dolore ex quaerat dignissimos numquam? Aut ducimus ab
+                            exercitationem excepturi modi magni laudantium sapiente nostrum.
+                        </p>
+                    </div>
+                    <a href="#" target="_blank" class="read-more-link"><i class="fas fa-link"></i> Read More ...</a>
                 </section>
             </div>
         </container>
 
-        <footer>
-            FOOTER
+        <footer id="footer">
+            <div id="footer-container">
+                <section class="footer-description">
+                    <div class="footer-nav">
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                    <section class="footer-copyright">
+                        All rights reserved 2020 &copy;
+                    </section>
+                </section>
+
+                <section class="footer logo-container">
+                    <img src="https://via.placeholder.com/80" alt="logo" id="logo" />
+                </section>
+                
+            </div>
+            
         </footer>
     </div>
 </body>
