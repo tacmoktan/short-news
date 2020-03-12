@@ -17,7 +17,21 @@
           box-shadow: 0 0 8px #0000008c;
 }
 
+#header #bar {
+  display: none;
+  margin: auto;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 599px) {
+  #header #bar {
+    display: block;
+  }
+}
+
 #header #side-navbar {
+  display: block;
   background: #153d53;
   color: white;
   position: fixed;
@@ -29,18 +43,44 @@
 
 #header #side-navbar .nav-item {
   padding: 20px;
-  cursor: pointer;
-  -webkit-transition: background, color 0.15s ease-in;
-  transition: background, color 0.15s ease-in;
+  color: white;
+  -webkit-transition: background-color 0.15s ease-in, color 0.15s ease-in;
+  transition: background-color 0.15s ease-in, color 0.15s ease-in;
 }
 
 #header #side-navbar .nav-item:hover {
-  background: #0f9197;
+  background-color: #78CCAE;
   color: #153d53;
 }
 
 #header #side-navbar .nav-item i {
   margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  #header #side-navbar .nav-item span {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  #header #side-navbar .nav-item span {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 900px) {
+  #header #side-navbar {
+    display: block;
+  }
+}
+
+@media (max-width: 599px) {
+  #header #side-navbar {
+    display: none;
+    width: 100%;
+    background: linear-gradient(125deg, #153d53 50%, transparent);
+  }
 }
 
 #header #title {

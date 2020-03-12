@@ -17,13 +17,20 @@
 
 <body>
     <div id="wrapper">
-        <header id="header">
+        <header id="header" onclick="onBarClick(event)">
+
+            <i class="fas fa-bars" id="bar"></i>
+
             <section id="side-navbar">
-                <div class="nav-item"> <i class="fas fa-newspaper"></i> ALL NEWS</div>
-                <div class="nav-item"> <i class="fas fa-suitcase"></i> Business </div>
-                <div class="nav-item"> <i class="fas fa-landmark"></i> Politics </div>
-                <div class="nav-item"> <i class="fas fa-volleyball-ball"></i> Sports </div>
-                <div class="nav-item"> <i class="fas fa-globe-asia"></i> World </div>
+                <a href="#" class="nav-item"> <i class="fas fa-newspaper" title="All news"></i> <span>ALL
+                        NEWS</span></a>
+                <a href="#" class="nav-item"> <i class="fas fa-suitcase" title="Business"></i> <span> Business </span>
+                </a>
+                <a href="#" class="nav-item"> <i class="fas fa-landmark" title="Politics"></i> <span>Politics</span>
+                </a>
+                <a href="#" class="nav-item"> <i class="fas fa-volleyball-ball" title="Sports"></i><span> Sports</span>
+                </a>
+                <a href="#" class="nav-item"> <i class="fas fa-globe-asia" title="World"></i><span> World</span> </a>
             </section>
             <h1 id="title">
                 NEWS in SHORT
@@ -89,11 +96,14 @@
                 <section class="footer logo-container">
                     <img src="https://via.placeholder.com/80" alt="logo" id="logo" />
                 </section>
-                
+
             </div>
-            
+
         </footer>
     </div>
+
+    <script type="text/javascript" src="./js/responsive-nav.js">
+    </script>
 </body>
 
 </html>
